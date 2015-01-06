@@ -10,7 +10,7 @@ import net.minecraftforge.common.config.Configuration;
 
 public class ModGuiConfig extends GuiConfig
 {
-    ModGuiConfig(GuiScreen guiScreen)
+    public ModGuiConfig(GuiScreen guiScreen)
     {
         super(guiScreen,
                 new ConfigElement(ConfigHandler.configuration.getCategory(Configuration.CATEGORY_GENERAL)).getChildElements(),
@@ -19,5 +19,4 @@ public class ModGuiConfig extends GuiConfig
                 false,
                 GuiConfig.getAbridgedConfigPath(ConfigHandler.configuration.toString()));
     }
-
 }

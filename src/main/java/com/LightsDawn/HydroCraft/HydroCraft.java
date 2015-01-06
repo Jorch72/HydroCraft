@@ -4,6 +4,8 @@ package com.LightsDawn.HydroCraft;
 import com.LightsDawn.HydroCraft.Handler.ConfigHandler;
 import com.LightsDawn.HydroCraft.Reference.Reference;
 import com.LightsDawn.HydroCraft.Utilities.LogHelper;
+import com.LightsDawn.HydroCraft.init.ModBlocks;
+import com.LightsDawn.HydroCraft.init.ModItems;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -43,6 +45,9 @@ public class HydroCraft
     {
         ConfigHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigHandler());
+
+        ModItems.init();
+        ModBlocks.init();
 
 
         LogHelper.info("PreInitialization Complete!");
