@@ -1,3 +1,6 @@
+#Creative Tab Name localization
+itemGroup.hydrocraft=HydroCraft
+
 # Item Localizations
 
 item.hydrocraft:hydroDriver.name=Hydro Driver

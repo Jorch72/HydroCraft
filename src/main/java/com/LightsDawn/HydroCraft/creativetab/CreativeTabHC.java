@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 
 public class CreativeTabHC
 {
-    public static final CreativeTabs HC_TAB = new CreativeTabs(Reference.MOD_ID)
+    public static final CreativeTabs HC_TAB = new CreativeTabs(Reference.MOD_ID.toLowerCase())
     {
         @Override
         public Item getTabIconItem()
@@ -16,11 +16,7 @@ public class CreativeTabHC
             return ModItems.HydroDriver;
         }
 
-        @Override
-        public String getTranslatedTabLabel()
-        {
-            return "HydroCraft";
-        }
+
     };
 }
 
