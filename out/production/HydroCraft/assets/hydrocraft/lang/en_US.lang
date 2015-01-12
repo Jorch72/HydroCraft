@@ -1,7 +1,22 @@
+#Creative Tab Name localization
+itemGroup.hydrocraft=HydroCraft
+
 # Item Localizations
 
 item.hydrocraft:hydroDriver.name=Hydro Driver
+item.hydrocraft:bromineIngot.name=Bromine Ingot
+item.hydrocraft:mercuryIngot.name=Mercury Ingot
+item.hydrocraft:franciumIngot.name=Francium Ingot
+item.hydrocraft:cesiumIngot.name=Cesium Ingot
+item.hydrocraft:rubidiumIngot.name=Rubidium Ingot
+item.hydrocraft:galliumIngot.name=Gallium Ingot
 
 # Block Localizations
 
 tile.hydrocraft:waterLamp.name=Water Lamp
+
+#Keys Localizations
+
+keys.hydrocraft.category=HydroCraft
+keys.hydrocraft.release=Charge
+keys.hydrocraft.charge=Release

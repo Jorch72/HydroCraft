@@ -1,6 +1,5 @@
 package com.LightsDawn.HydroCraft.item;
 
-
 public class ItemHydroDriver extends ItemHC
 {
     public ItemHydroDriver()
@@ -9,5 +8,7 @@ public class ItemHydroDriver extends ItemHC
         this.setUnlocalizedName("hydroDriver");
         this.setMaxStackSize(1);
 
+
     }
+
 }
