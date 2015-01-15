@@ -17,7 +17,5 @@ public class Recipes
                 'x', new ItemStack(Items.water_bucket),
                 'z', new ItemStack(Items.stick));
 
-        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.waterLamp), new ItemStack(Blocks.redstone_lamp),
-                new ItemStack(Items.dye,64,4));
     }
 }

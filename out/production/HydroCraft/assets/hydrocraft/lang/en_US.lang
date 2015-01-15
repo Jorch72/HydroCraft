@@ -13,10 +13,10 @@ item.hydrocraft:galliumIngot.name=Gallium Ingot
 
 # Block Localizations
 
-tile.hydrocraft:waterLamp.name=Water Lamp
+tile.hydrocraft:bromineOre.name=Bromine Ore
+tile.hydrocraft:cesiumOre.name=Cesium Ore
+tile.hydrocraft:franciumOre.name=Francium Ore
+tile.hydrocraft:galliumOre.name=Gallium Ore
+tile.hydrocraft:mercuryOre.name=Mercury Ore
+tile.hydrocraft:rubidiumOre.name=Rubidium Ore
 
-#Keys Localizations
-
-keys.hydrocraft.category=HydroCraft
-keys.hydrocraft.release=Charge
-keys.hydrocraft.charge=Release

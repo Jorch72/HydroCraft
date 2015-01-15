@@ -7,6 +7,7 @@ import com.LightsDawn.HydroCraft.Utilities.LogHelper;
 import com.LightsDawn.HydroCraft.init.ModBlocks;
 import com.LightsDawn.HydroCraft.init.ModItems;
 import com.LightsDawn.HydroCraft.init.Recipes;
+import com.LightsDawn.HydroCraft.world.worldGen;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -15,6 +16,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import com.LightsDawn.HydroCraft.proxy.IProxy;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, certificateFingerprint = Reference.FINGERPRINT, guiFactory = Reference.GUIFACTORY)
 public class HydroCraft
@@ -47,7 +49,6 @@ public class HydroCraft
         ConfigHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigHandler());
 
-        proxy.registerKeyBindings();
 
         ModItems.init();
         ModBlocks.init();
@@ -60,6 +61,7 @@ public class HydroCraft
     public void Init(FMLInitializationEvent event)
     {
         Recipes.init();
+        GameRegistry.registerWorldGenerator(new worldGen(),1);
         LogHelper.info("Initialization Complete!");
     }
 

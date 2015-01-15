@@ -11,6 +11,7 @@ public class BromineOre extends BlockHC
         this.setHardness(4.0f);
         this.setStepSound(soundTypePiston);
         this.setBlockName("bromineOre");
+
     }
 
 }
